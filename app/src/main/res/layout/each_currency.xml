@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    >
+    <LinearLayout
+        android:id="@+id/currency_layout"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="8dp"
+        android:orientation="horizontal"
+        >
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/source_logo"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            app:civ_border_width="1dp"
+            android:layout_marginRight="16dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:id="@+id/currency_name"
+            tools:text="Currency"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:paddingRight="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:id="@+id/currency_id"
+            tools:text="CUR"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:fontFamily="sans-serif-smallcaps"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@id/currency_layout"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="140dp"
+            android:layout_height="52dp"
+            android:layout_marginLeft="69dp"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btc"
+                />
+
+            <TextView
+                android:id="@+id/btc_rate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="#00.00" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="140dp"
+            android:layout_height="52dp"
+            android:layout_marginLeft="17dp"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/eth"
+                />
+
+            <TextView
+                android:id="@+id/eth_rate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="#00.00" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+

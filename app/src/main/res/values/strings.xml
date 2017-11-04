@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">CryptoConvert</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="eth">ETH</string>
+    <string name="no_internet_connection">No Internet Connection</string>
+    <string name="nothing_to_see_here">Nothing to see here</string>
+    <string name="btc">BTC</string>
+    <string-array name="currency_code">
+        <item>USD</item>
+        <item>EUR</item>
+        <item>NGN</item>
+        <item>MXN</item>
+        <item>COP</item>
+        <item>JPY</item>
+        <item>ILS</item>
+        <item>GBP</item>
+        <item>CNY</item>
+        <item>BRL</item>
+        <item>CAD</item>
+        <item>ZAR</item>
+        <item>RUB</item>
+        <item>EGP</item>
+        <item>INR</item>
+        <item>TRY</item>
+        <item>SEK</item>
+        <item>MTL</item>
+        <item>ARS</item>
+        <item>KHR</item>
+    </string-array>
+
+    <string-array name="currency_name">
+        <item>US, Dollars</item>
+        <item>Euro</item>
+        <item>Naira</item>
+        <item>Mexico, Pesos</item>
+        <item>Colombia, Pesos</item>
+        <item>Japan, Yen</item>
+        <item>Israel, New Shekels</item>
+        <item>UK, Pounds</item>
+        <item>China, Yuan Renminbi</item>
+        <item>Brazil, Reais</item>
+        <item>Canada, Dollars</item>
+        <item>SA, Rand</item>
+        <item>Russia, Rubles</item>
+        <item>Egypt, Pounds</item>
+        <item>India, Rupees</item>
+        <item>Turkey, New Lira</item>
+        <item>Sweden, Kronor</item>
+        <item>Malta, Liri</item>
+        <item>Argentina, Pesos</item>
+        <item>Cambodia, Riels</item>
+    </string-array>
+</resources>
