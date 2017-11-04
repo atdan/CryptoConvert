@@ -2,6 +2,7 @@ package ng.codeinn.cryptoconvert;
 
 import android.app.LoaderManager;
 import android.content.Context;
+import android.content.Intent;
 import android.content.Loader;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
@@ -15,6 +16,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -71,6 +73,20 @@ public class CurrencyActivity extends AppCompatActivity
         mCurrencyAdapter = new CurrencyAdapter(this, new ArrayList<MyCurrency>());
 
         currencyListView.setAdapter(mCurrencyAdapter);
+
+        currencyListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                MyCurrency currentCurrency = (MyCurrency) mCurrencyAdapter.getItem(position);
+                double btcRate = Double.parseDouble(currentCurrency.getBtcRate());
+                double ethRate = Double.parseDouble(currentCurrency.getEthRate());
+
+                Intent convertIntent = new Intent(view.getContext(), ConvertActivity.class);
+                convertIntent.putExtra("btcRate", btcRate);
+                convertIntent.putExtra("ethRate", ethRate);
+                startActivity(convertIntent);
+            }
+        });
 
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
